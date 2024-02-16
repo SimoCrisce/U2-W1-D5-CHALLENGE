@@ -1,0 +1,155 @@
+body {
+  font-family: "Roboto", sans-serif;
+  height: 150vh;
+}
+
+header {
+  background-color: #ffc017;
+}
+
+h1 {
+  font-family: "Spectral", serif;
+  font-size: 106px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+  padding-block: 2rem 2.5rem;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.2rem;
+  border-bottom: 1px solid black;
+  padding-inline: 150px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 26%;
+}
+
+nav ul li {
+  list-style-type: none;
+  font-size: 14px;
+}
+
+nav button {
+  border: 0;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+section {
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+}
+
+section div {
+  padding-block: 3.5rem 5rem;
+}
+
+section div button {
+  border: 0;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem 3rem;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+main section {
+  padding-inline: 150px;
+}
+
+.margin-inline {
+  margin-inline: 150px;
+}
+/* TRENDING */
+
+.margin-inline > div > h4 {
+  font-weight: bold;
+}
+
+.margin-inline > div:first-child {
+  display: flex;
+
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.trending {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-inline: 150px; */
+  flex-wrap: wrap;
+}
+.trending > div {
+  display: flex;
+  height: 5rem;
+  margin-top: 2rem;
+  width: 33%;
+  height: 100px;
+}
+
+.big-number {
+  margin-right: 1rem;
+}
+
+.big-number h2 {
+  color: #e6e7e6;
+  font-weight: bold;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.img-text {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+}
+
+.square {
+  width: 25px;
+  border-radius: 5px;
+  margin-right: 0.3rem;
+}
+/*
+.trending h4 {
+  margin-bottom: 2rem;
+} */
