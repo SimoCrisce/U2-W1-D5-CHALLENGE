@@ -1,10 +1,13 @@
 body {
   font-family: "Roboto", sans-serif;
-  height: 150vh;
 }
 
 header {
   background-color: #ffc017;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 h1 {
@@ -51,6 +54,7 @@ ul {
 nav ul li {
   list-style-type: none;
   font-size: 14px;
+  cursor: pointer;
 }
 
 nav button {
@@ -61,6 +65,7 @@ nav button {
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 14px;
+  cursor: pointer;
 }
 
 section {
@@ -70,6 +75,12 @@ section {
 
 section div {
   padding-block: 3.5rem 5rem;
+  width: 45%;
+  margin-top: 4.5rem;
+}
+
+section div h1 {
+  letter-spacing: -8px;
 }
 
 section div button {
@@ -80,41 +91,53 @@ section div button {
   padding: 0.5rem 3rem;
   border-radius: 20px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 main section {
   padding-inline: 150px;
 }
 
-.margin-inline {
-  margin-inline: 150px;
+.padding-inline {
+  padding-inline: 150px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 2rem;
 }
+
 /* TRENDING */
 
-.margin-inline > div > h4 {
+.trending-container > div > h4 {
   font-weight: bold;
 }
 
-.margin-inline > div:first-child {
+.trending-container > div:first-child {
   display: flex;
-
   align-items: center;
   margin-top: 3rem;
+}
+
+.trending-container > div:first-child > h4 {
+  margin-left: 0.5rem;
 }
 
 .trending {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-inline: 150px; */
   flex-wrap: wrap;
 }
-.trending > div {
+
+.trending h4,
+.img-text h5 {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.article {
   display: flex;
-  height: 5rem;
   margin-top: 2rem;
   width: 33%;
-  height: 100px;
+  height: 7rem;
 }
 
 .big-number {
@@ -133,6 +156,16 @@ main section {
   margin-top: 0.5rem;
 }
 
+.date {
+  display: flex;
+  align-items: center;
+  color: #898986;
+}
+
+.star {
+  margin-left: 0.3rem;
+}
+
 .img-text {
   display: flex;
   align-items: center;
@@ -149,7 +182,93 @@ main section {
   border-radius: 5px;
   margin-right: 0.3rem;
 }
-/*
-.trending h4 {
-  margin-bottom: 2rem;
-} */
+
+/* RELATED */
+
+.related-container {
+  padding-inline: 150px;
+  width: 50%;
+}
+
+.article2 {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+
+.article2 img:nth-child(2) {
+  margin-left: 2rem;
+  width: 200px;
+}
+
+.article2 h4 {
+  color: #898986;
+}
+
+.related-container .news {
+  height: 9rem;
+}
+
+.related-container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0;
+}
+
+.related-container span {
+  background-color: rgb(243, 242, 242);
+  padding: 0.2rem;
+  border-radius: 10px;
+}
+
+.save-btn {
+  margin-left: auto;
+}
+
+.article2:last-child {
+  padding-bottom: 2rem;
+}
+
+.bottom-container {
+  display: flex;
+  width: 95%;
+}
+
+.discover {
+  width: 30%;
+  padding-bottom: 2rem;
+  height: 100%;
+}
+
+.discover h4 {
+  margin-block: 3rem 1rem;
+  font-weight: bold;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topics > div {
+  color: #898986;
+  padding: 0.7rem 1rem;
+  border: 1px solid rgb(243, 242, 242);
+  font-size: 14px;
+  margin: 0.2rem;
+}
+
+.footer {
+  display: flex;
+  color: #898986;
+  flex-wrap: wrap;
+  border-top: 1px solid lightgray;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.footer > div {
+  margin: 0.5rem 0.8rem;
+  cursor: pointer;
+}
