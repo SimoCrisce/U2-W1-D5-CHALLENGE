@@ -4,7 +4,7 @@ body {
 
 header {
   background-color: #ffc017;
-  position: fixed;
+  position: sticky;
   z-index: 1;
   left: 0;
   right: 0;
@@ -73,7 +73,6 @@ section {
   background-color: #ffc017;
   border-bottom: 1px solid black;
   position: relative;
-  margin-top: 4.5rem;
   overflow: hidden;
 }
 
